@@ -155,7 +155,7 @@ a {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 180px; }
+  bottom: 128px; }
   #main #header {
     width: 1000px;
     height: 224px;
@@ -207,7 +207,7 @@ a {
   #main #contentWrapper {
     float: left;
     width: 1000px;
-    margin-bottom: 180px;
+    padding-bottom: 128px;
     background: url("../images/bg.jpg") repeat-y; }
     #main #contentWrapper:after {
       content: "";
@@ -216,10 +216,10 @@ a {
     #main #contentWrapper #subnav {
       float: left;
       width: 120px;
-      min-height: 400px;
+      min-height: 300px;
       padding: 18px; }
       #main #contentWrapper #subnav ul {
-        margin: 0;
+        margin: 12px 0;
         padding: 0; }
         #main #contentWrapper #subnav ul li {
           list-style: none;
@@ -229,31 +229,64 @@ a {
     #main #contentWrapper #content {
       float: left;
       width: 600px;
-      min-height: 400px;
-      padding-right: 20px;
-      text-align: justify; }
+      min-height: 300px;
+      padding: 16px 20px 16px 0;
+      text-align: justify;
+      line-height: 19px; }
+      #main #contentWrapper #content h1 {
+        font-size: 14pt;
+        font-weight: normal; }
+      #main #contentWrapper #content h2 {
+        font-size: 12pt; }
+      #main #contentWrapper #content blockquote {
+        margin: 0; }
     #main #contentWrapper #recent {
       float: left;
       width: 280px;
-      padding: 16px 14px; }
+      padding: 16px 14px;
+      text-align: justify; }
+    #main #contentWrapper #imageContent {
+      float: left;
+      width: 600px;
+      z-index: 100; }
 
 #footer {
   position: fixed;
   width: 1000px;
-  height: 180px;
+  height: 128px;
   left: 50%;
   bottom: 0;
   margin-left: -500px;
   background: black; }
   #footer #gallery {
     float: left;
-    width: 720px; }
-    #footer #gallery img {
+    width: 600px;
+    margin-left: 120px; }
+    #footer #gallery a img {
       height: 120px;
-      margin: 4px 0 4px 4px; }
-  #footer #footerNote {
+      margin: 4px 8px 4px 0; }
+    #footer #gallery a:last-child img {
+      margin-right: 0; }
+
+#footerNote {
+  float: left;
+  width: 280px;
+  padding: 12px 0 0 14px;
+  font-weight: bold;
+  color: #2d8e58; }
+
+#imageFooter {
+  background: black;
+  width: 1000px;
+  float: left;
+  margin-top: -200px; }
+  #imageFooter #imageTitle {
+    color: white;
     float: left;
-    width: 280px;
-    padding: 12px 0 0 14px;
-    font-weight: bold;
-    color: #2d8e58; }
+    width: 120px;
+    padding: 60px 18px; }
+  #imageFooter #imageText {
+    float: left;
+    color: white;
+    width: 600px;
+    margin: 80px 0 20px; }
